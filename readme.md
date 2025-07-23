@@ -1,3 +1,40 @@
+
+
+# Pet Shop Order Management System
+This is a simplified .NET-based order management system for a Pet Shop. It allows Users to place and update orders for pets, 
+enforcing domain rules like order status transitions and validation.
+
+---
+
+##  Features
+
+- Create, update, and retrieve orders 
+- Add and remove pets in an order if `Order Status` allows
+- Transition order status: `Open` → `Processing` → `Delivered`
+- Enforce business rules (e.g., cannot edit delivered orders)
+- Estimate vs. actual cost
+- FluentValidation-based input validation
+- In-memory database support for testing
+- Create and retrieve Customers
+- Create and retrieve Pets
+
+##  Project Structure
+
+<pre lang="markdown"><code> 
+PetShop
+│   ├── PetShop.API/                   # Entry point (ASP.NET Core Web API)  
+│   ├── PetShop.Application/           # Business logic, UseCases, DTOs  
+│   ├── PetShop.Domain/                # Domain models & entities (core logic)  
+│   ├── PetShop.Core/                  # Db Contexts and Repository  
+│   ├── PetShop.Tests/                 # Unit tests for Application layer 
+│ 
+│
+├── .editorconfig 
+├── PetShop.sln 
+└── README.md
+ </code></pre>
+
+
 # Welcome!
 
 Congratulations on making it this far in the interview process!
@@ -32,7 +69,6 @@ You will need to manage the following:
 Consider how you would structure your api if it was part of a larger project. Feel free to use an in-memory version of the DbContext in your api.  Also consider adding unit tests.
 
 
-To proceed, please fork this repository and build the api per the requirements above. 
+To proceed, please fork this repository and build the api per the requirements above.
 
 Have fun with it!  When you are ready, create a pull request with your code changes and we'll have a look!
-
