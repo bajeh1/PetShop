@@ -1,0 +1,6 @@
+﻿services:
+  petshop:
+    image: petshop
+    build:
+      context: .
+      dockerfile: PetShop/Dockerfile
